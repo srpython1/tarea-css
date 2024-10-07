@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación sobre CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #35424a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+      
+      #t1  {
+        
+         background-color: #354;
+            color: white;
+        
+        
+       }
+         #t2  {
+        
+         background-color: blue;
+            color: white;
+        
+        
+       }
+         #t3  {
+        
+         background-color: lightgreen;
+            color: white;
+        
+        
+       }
+         #t4  {
+        
+         background-color: burlywood;
+            color: white;
+        
+        
+       }
+         #t5 {
+        
+         background-color: blueviolet;
+            color: white;
+        
+        
+       }
+         #t6  {
+        
+         background-color: crimson;
+            color: white;
+        
+        
+       }
+         #t7  {
+        
+         background-color: brown;
+            color: white;
+        
+        
+       }
+          }
+      
+         #t8  {
+        
+         background-color: beige;
+            color: white;
+        
+        
+       }
+      
+        ul {
+            margin-left: 20px;
+       {
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Investigación sobre CSS</h1>
+    </header>
+    <main>
+        <section id="t1">
+            <h2>1. Definición de CSS</h2>
+            <p>CSS (Cascading Style Sheets o Hojas de Estilo en Cascada) es un lenguaje de diseño utilizado para describir la presentación de documentos HTML. Permite separar la estructura del contenido y la presentación visual, facilitando así el diseño y la maquetación de páginas web de forma coherente y eficiente.</p>
+        </section>
+        <section id="t2">
+            <h2>2. Funcionamiento Básico de CSS</h2>
+            <p>CSS funciona a través de un conjunto de reglas que se aplican a los elementos HTML. Cada regla contiene un selector que identifica a qué elementos se aplica y un bloque de declaración que especifica las propiedades y los valores a modificar. Esto permite a los desarrolladores estilizar el contenido sin afectar su estructura semántica.</p>
+        </section>
+        <section id="t3">
+            <h2>3. Incluir CSS en un archivo HTML</h2>
+            <p>Hay varias formas de incluir CSS en un documento HTML:</p>
+            <ul>
+                <li><strong>Inline:</strong> Se aplica directamente a un elemento usando el atributo <code>style</code>. Ejemplo: <code>&lt;h1 style="color: red;"&gt;Título&lt;/h1&gt;</code>.</li>
+                <li><strong>Interno:</strong> Se define dentro de una etiqueta <code>&lt;style&gt;</code> en la sección <code>&lt;head&gt;</code> del documento. Ejemplo:</li>
+                <code>
+                &lt;style&gt;<br>
+                h1 { color: blue; }<br>
+                &lt;/style&gt;
+                </code>
+                <li><strong>Externo:</strong> Se utiliza la etiqueta <code>&lt;link&gt;</code> para enlazar a un archivo CSS externo, lo que es la práctica recomendada. Ejemplo: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.</li>
+            </ul>
+        </section>
+        <section id="t4">
+            <h2>4. Definición de una regla CSS</h2>
+            <p>Una regla CSS es una declaración que define cómo se deben estilizar ciertos elementos HTML. Consiste en un selector que apunta a uno o más elementos y un bloque de declaración que incluye uno o más pares de propiedad-valor. Por ejemplo:</p>
+            <code>
+            p { color: green; font-size: 16px; }
+            </code>
+            <p>En este ejemplo, el selector es <code>p</code>, que se refiere a todos los párrafos, y el bloque de declaración contiene las propiedades <code>color</code> y <code>font-size</code>.</p>
+        </section>
+        <section id="t5">
+            <h2>5. Elementos de una regla CSS</h2>
+            <p>Una regla CSS consta de varios elementos:</p>
+            <ul>
+                <li><strong>Regla:</strong> El conjunto completo de estilos aplicados a uno o más elementos.</li>
+                <li><strong>Selector:</strong> Parte de la regla que identifica los elementos a los que se aplicará el estilo.</li>
+                <li><strong>Bloque de declaración:</strong> Contiene las propiedades y valores entre llaves <code>{}</code>.</li>
+                <li><strong>Propiedad:</strong> Aspecto del elemento que se desea modificar, como <code>color</code>, <code>font-size</code>, etc.</li>
+                <li><strong>Valor:</strong> El valor asignado a una propiedad, como <code>red</code> o <code>16px</code>.</li>
+            </ul>
+        </section>
+        <section id="t6">
+            <h2>6. Medios CSS</h2>
+            <p>Los medios CSS, o media queries, permiten aplicar estilos diferentes según las características del dispositivo donde se visualiza la página, como el tamaño de la pantalla. Esto es crucial para el diseño responsivo. Por ejemplo:</p>
+            <code>
+            @media screen and (max-width: 600px) {<br>
+                body { background-color: lightblue; }<br>
+            }
+            </code>
+            <p>Esto cambiará el fondo a azul claro en pantallas de 600 píxeles de ancho o menos.</p>
+        </section>
+        <section id="t7">
+            <h2>7. Comentarios CSS</h2>
+            <p>Los comentarios en CSS permiten añadir notas o anotaciones en el código que no son interpretadas por el navegador. Se utilizan para documentar el código o para desactivar temporalmente estilos. Se escriben entre <code>/*</code> y <code>*/</code>. Por ejemplo:</p>
+            <code>
+            /* Este es un comentario que explica el siguiente estilo */<br>
+            h2 { color: blue; }
+            </code>
+        </section>
+        <section id="t8">
+            <h2>8. Sintaxis de la definición de las propiedades CSS</h2>
+            <p>La sintaxis básica para definir propiedades CSS es la siguiente: se comienza con un selector, seguido de un bloque de declaración que contiene propiedades y valores. La estructura es:</p>
+            <code>
+            selector {<br>
+                propiedad: valor;<br>
+            }
+            </code>
+            <p>Por ejemplo, para cambiar el color de todos los encabezados <code>h1</code> a rojo, la regla sería:</p>
+            <code>
+            h1 { color: red; }
+            </code>
+        </section>
+    </main>
+</body>
+</html>
+
